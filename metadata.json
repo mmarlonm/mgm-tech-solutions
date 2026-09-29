@@ -1,0 +1,6 @@
+{
+  "name": "MGM Tech Solutions",
+  "description": "Plataforma de ingeniería de software de alto impacto, soluciones tecnológicas empresariales a la medida, CRM, ERP, arquitectura sináptica y ecosistemas digitales.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
