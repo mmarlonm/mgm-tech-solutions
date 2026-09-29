@@ -3,6 +3,7 @@ import { NavSection } from '../types';
 import { HERO_OFFICE_IMG, AVATAR_URL } from '../data/mockData';
 import { HomeHero3D } from '../components/HomeHero3D';
 import { MessageSquare, Mail, Send, ArrowRight, ShieldCheck, Cpu, Sparkles, Layers, ChevronRight, Zap } from 'lucide-react';
+import { getAssetUrl } from '../utils/assetPath';
 
 interface Props {
   onNavigate: (section: NavSection) => void;
@@ -242,7 +243,7 @@ export const HomeView: React.FC<Props> = ({ onNavigate, onOpenConsultation }) =>
           <div className="mt-8 p-8 rounded-3xl bg-gradient-to-r from-[#0f3d2a]/30 via-[#0f2137] to-[#1a3a5c]/30 border border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-[#34b563] shrink-0 bg-white">
-                <img src="/jr-logo.png" alt="JR Ingeniería Eléctrica avatar" className="w-full h-full object-contain p-1" />
+                <img src={getAssetUrl('/jr-logo.png')} alt="JR Ingeniería Eléctrica avatar" className="w-full h-full object-contain p-1" />
               </div>
               <div>
                 <p className="text-sm md:text-base italic text-slate-200 font-light">

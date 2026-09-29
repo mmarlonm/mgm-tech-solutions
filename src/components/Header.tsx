@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { NavSection } from '../types';
 import { AVATAR_URL } from '../data/mockData';
 import { Menu, X, Sparkles, ArrowRight, ShieldCheck, Terminal, Layers } from 'lucide-react';
+import { getAssetUrl } from '../utils/assetPath';
 
 interface Props {
   currentSection: NavSection;
@@ -27,7 +28,7 @@ export const Header: React.FC<Props> = ({ currentSection, onNavigate, onOpenCons
           onClick={() => onNavigate('inicio')}
           className="flex items-center gap-3 group text-left focus:outline-none"
         >
-          <img src="/mgm-logo.png" alt="MGM Tech Solutions Logo" className="h-12 w-auto group-hover:scale-105 transition-transform object-contain" />
+          <img src={getAssetUrl('/mgm-logo.png')} alt="MGM Tech Solutions Logo" className="h-12 w-auto group-hover:scale-105 transition-transform object-contain" />
         </button>
 
         {/* Desktop Navigation Links */}

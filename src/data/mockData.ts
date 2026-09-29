@@ -1,4 +1,5 @@
 import { PortfolioProject, TechItem, ServiceItem } from '../types';
+import { getAssetUrl } from '../utils/assetPath';
 
 export const AVATAR_URL = 'https://lh3.googleusercontent.com/aida/AEtjO1UjK5Yzek55EKuralfb6sQtXBcNq47yuYTTGgL94-lHJ_n09bZZ3BedWmOchnWEnGd74kQJU-swJf5S3AJGw9lFi6CnFlKVYam_TT3kPVC_yWemOFi8sMMPhXGaIVuJmWBSeBH4aX0wj4aDKVCztVN9vpJ_Degsxto3r7MpTIa72kHT-T72Mqn0lq77TaaSdJY6UWJu4tLaTVXwH9OFRMmdq1DedzsO5VTPVFLr6PKGWX_zmtJtpdhuIzDXcYxgMszSGrXvh1E';
 
@@ -19,12 +20,12 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
       'Tracking y control de procesos (Administración e Ingeniería).',
       'Motor de notificaciones automatizadas vía WhatsApp API y Email.'
     ],
-    imageUrl: '/jr-dashboard.png',
+    imageUrl: getAssetUrl('/jr-dashboard.png'),
     imageAlt: 'Dashboard CRM JR Ingeniería Eléctrica',
     gallery: [
-      '/jr-dashboard.png',
-      '/jr-login.png',
-      '/jr-tasks.png'
+      getAssetUrl('/jr-dashboard.png'),
+      getAssetUrl('/jr-login.png'),
+      getAssetUrl('/jr-tasks.png')
     ],
     clientIndustry: 'Ingeniería Eléctrica y Construcción',
     deliveryYear: '2026',

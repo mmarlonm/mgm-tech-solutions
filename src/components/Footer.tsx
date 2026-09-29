@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavSection } from '../types';
 import { Layers, Mail, MapPin, MessageSquare, Facebook, Globe, Github, Linkedin, ShieldCheck } from 'lucide-react';
+import { getAssetUrl } from '../utils/assetPath';
 
 interface Props {
   onNavigate: (section: NavSection) => void;
@@ -18,7 +19,7 @@ export const Footer: React.FC<Props> = ({ onNavigate, onOpenConsultation }) => {
           {/* Col 1 & 2: Brand Info */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              <img src="/mgm-logo.png" alt="MGM Tech Solutions Logo" className="h-12 w-auto object-contain" />
+              <img src={getAssetUrl('/mgm-logo.png')} alt="MGM Tech Solutions Logo" className="h-12 w-auto object-contain" />
             </div>
             <p className="text-sm text-slate-400 max-w-sm leading-relaxed">
               Innovación dinámica para entornos empresariales de alto nivel. Arquitectura de software, sistemas distribuidos, omnicanalidad y desarrollo a la medida.
